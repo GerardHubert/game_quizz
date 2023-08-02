@@ -1,0 +1,89 @@
+.menu {
+  font-size: 0.5em;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 700px;
+  height: 300px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 5px;
+}
+
+.app-rules {
+  font-weight: normal;
+  font-size: 2em;
+  letter-spacing: 1px;
+  ;
+}
+
+.start-button {
+  height: 130px;
+  width: 130px;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  font-family: 'Press Start 2P', cursive;
+  align-self: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: none;
+  background: black;
+}
+
+.start {
+  z-index: 5;
+  background: #f12711;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f5af19, #f12711);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ;
+  color: transparent;
+  background-clip: text;
+}
+
+.start-button::before {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 5px;
+  background: conic-gradient(#e55039, transparent, transparent);
+  animation: 3s linear infinite rotate;
+  transition: 0.3s ease
+}
+
+.start-button::after {
+  content: '';
+  position: absolute;
+  border-radius: 5px;
+  background: black;
+  inset: 5px;
+  transition: 0.3s linear
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg)
+  }
+
+  100% {
+    transform: rotate(-360deg)
+  }
+}
+
+.start-button:hover::after {
+  cursor: pointer;
+  background-color: white
+}
+
+.start-button:hover .start {
+  color: black
+}

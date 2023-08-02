@@ -1,0 +1,35 @@
+  @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Press+Start+2P&family=Shantell+Sans:ital,wght@1,300&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Indie+Flower&family=Shantell+Sans:ital,wght@1,300&display=swap');
+
+  /* body {
+    background-color: #2f3542;
+    font-family: 'Press Start 2P', cursive;
+  } */
+
+  #root {
+    height: 100vh;
+    background-color: #222f3e;
+    display: flex;
+    justify-content: center;
+  }
+
+  .app {
+    margin-top: 30px;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .board {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }

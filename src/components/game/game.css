@@ -1,0 +1,98 @@
+.game-board {
+  width: 700px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.stats-container {
+  width: 600px;
+  height: 60px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #C9D6FF;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E2E2E2, #C9D6FF);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.attempts-container,
+.score-container {
+  width: 40%;
+  height: 100%;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stat-name {
+  margin-right: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.score,
+.attempt {
+  font-size: 2em;
+  font-family: 'Press Start 2P', cursive;
+  margin-right: 5px;
+  background: #ff5252;
+  color: transparent;
+  background-clip: text;
+}
+
+.image-to-guess {
+  width: 600px;
+  height: 350px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+.answers-container {
+  width: 600px;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.answer {
+  font-size: 0.7em;
+  font-weight: bold;
+  width: 295px;
+  height: 40px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #243B55;
+  background: #C9D6FF;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E2E2E2, #C9D6FF);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  transition: 0.3s linear
+}
+
+.answer:hover {
+  cursor: pointer;
+  background: #141E30;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #243B55, #141E30);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #243B55, #141E30);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  border: 1px solid white
+}

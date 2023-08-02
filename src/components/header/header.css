@@ -1,0 +1,12 @@
+.header {
+  width: 700px;
+}
+
+.header-title {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+}

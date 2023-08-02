@@ -1,0 +1,110 @@
+.gameover-container {
+  width: 700px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.gameover-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  background: #C02425;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #F0CB35, #C02425);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #F0CB35, #C02425);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: transparent;
+  background-clip: text;
+
+}
+
+.final-score-container {
+  width: 350px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.final-score-title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.final-score {
+  font-size: 7em;
+  font-family: 'Press Start 2P', cursive;
+  background: -webkit-linear-gradient(to bottom, #F0CB35, #C02425);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #F0CB35, #C02425);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: transparent;
+  background-clip: text;
+}
+
+.play-again-btn {
+  width: 300px;
+  height: 150px;
+  border: none;
+  text-transform: uppercase;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 5px;
+  background: black;
+  color: white;
+  position: relative;
+  transition: 0.5s ease;
+}
+
+.play-again-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  inset: green;
+  transition: 0.4s ease;
+}
+
+.play-again-btn::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  inset: green;
+  transition: 0.4s ease;
+}
+
+.play-again-btn:hover {
+  cursor: pointer;
+  background: -webkit-linear-gradient(to bottom, #F0CB35, #C02425);
+  background: linear-gradient(to bottom, #F0CB35, #C02425);
+  color: black
+}
+
+.play-again-btn:hover::after,
+.play-again-btn:hover::before {
+  width: 100%;
+  height: 100%
+}
+
+.play-again-btn:hover::after {
+  border-top: 1px solid #fff2df;
+  border-left: 1px solid #fff2df;
+}
+
+.play-again-btn:hover::before {
+  border-bottom: 1px solid #fff2df;
+  border-right: 1px solid #fff2df;
+}

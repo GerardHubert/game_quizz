@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5c82b3cd.css",
+    "main.js": "/static/js/main.cff0b617.js",
+    "static/js/787.6a541d2d.chunk.js": "/static/js/787.6a541d2d.chunk.js",
+    "static/media/controller.jpg": "/static/media/controller.4b2390f8524d939ecf7a.jpg",
+    "static/media/arcade-neon.jpg": "/static/media/arcade-neon.d9da781b8e990eb43393.jpg",
+    "index.html": "/index.html",
+    "main.5c82b3cd.css.map": "/static/css/main.5c82b3cd.css.map",
+    "main.cff0b617.js.map": "/static/js/main.cff0b617.js.map",
+    "787.6a541d2d.chunk.js.map": "/static/js/787.6a541d2d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c82b3cd.css",
+    "static/js/main.cff0b617.js"
+  ]
+}
